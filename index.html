@@ -14,57 +14,6 @@
             padding: 20px;
         }
         h1 {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-        input {
-            padding: 10px;
-            width: 80%;
-            max-width: 300px;
-            border: none;
-            border-radius: 5px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        li {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px 20px;
-            margin: 5px 0;
-            border-radius: 5px;
-            width: fit-content;
-            min-width: 200px;
-            max-width: 60%;
-        }
-    </style>
-    <script>
-        function searchSpek() {
-            let input = document.getElementById('search').value.toLowerCase();
-            let items = document.querySelectorAll('li');
-
-            items.forEach(item => {
-                let text = item.textContent.toLowerCase();
-                item.style.display = text.includes(input) ? '' : 'none';
-            });
-        }
-    </script>
-</head>
-<body>
-    <h1>SPEK PC SANTIAGO + SENS</h1>
-    <input type="text" id="search" onkeyup="searchSpek()" placeholder="Cari spek...">
-    <ul>
-        <li><strong>Sens:</strong> 0.408 dpi 2000</li>
-        <li><strong>VGA:</strong> RTX 3050</li>
-        <li><strong>CPU:</strong> Ryzen 7 5800x3D</li>
-        <li><strong>Mouse:</strong> WI Mouse Beast X Max</li>
-        <li><strong>Monitor:</strong> Lenovo 240hz</li>
-        <li><strong>Headset:</strong> Hyperx Cloud2</li>
-        <li><strong>Mousepad:</strong> Fantech Agile</li>
-    </ul>
-</body>
-</html>
+           
