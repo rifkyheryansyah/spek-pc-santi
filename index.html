@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPEK PC SANTIAGO + SENS</title>
+    <title>Spek PC Santiago</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,8 +12,75 @@
             color: white;
             text-align: center;
             padding: 20px;
+            margin: 0; /* Menghilangkan margin default body */
+            height: 100vh; /* Memastikan body memenuhi tinggi viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Memusatkan konten secara vertikal */
+            align-items: center; /* Memusatkan konten secara horizontal */
         }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%; /* Lebar container */
+            max-width: 600px; /* Lebar maksimum container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+        }
+
         h1 {
-            font-size: 26px;
+            font-size: 32px;
             font-weight: bold;
-           
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Efek bayangan teks */
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #FFFF00; /* Warna kuning untuk penekanan */
+        }
+
+        /* Style untuk responsif */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Spek PC Santiago</h1>
+        <p>Berikut adalah spesifikasi PC yang digunakan Santiago untuk streaming:</p>
+        <p><span class="highlight">Prosesor:</span> AMD Ryzen 9 5900X</p>
+        <p><span class="highlight">Motherboard:</span> ASUS ROG Crosshair VIII Hero</p>
+        <p><span class="highlight">RAM:</span> 32GB DDR4 3600MHz</p>
+        <p><span class="highlight">Kartu Grafis:</span> NVIDIA GeForce RTX 3080</p>
+        <p><span class="highlight">Penyimpanan:</span> 1TB NVMe SSD + 2TB HDD</p>
+        <p><span class="highlight">Casing:</span> NZXT H510i</p>
+        <p><span class="highlight">PSU:</span> Corsair RM850x</p>
+        <p><span class="highlight">Monitor:</span> ASUS ROG Swift PG279Q (1440p 165Hz)</p>
+        <p><span class="highlight">Keyboard:</span> Razer BlackWidow V3</p>
+        <p><span class="highlight">Mouse:</span> Logitech G Pro Wireless</p>
+        <p><span class="highlight">Headset:</span> HyperX Cloud Alpha</p>
+        <p><span class="highlight">Mikrofon:</span> Rode NT-USB+</p>
+        <p><span class="highlight">Webcam:</span> Logitech Brio</p>
+    </div>
+</body>
+</html>
