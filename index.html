@@ -12,39 +12,57 @@
             color: white;
             text-align: center;
             padding: 20px;
-            margin: 0; /* Menghilangkan margin default body */
-            height: 100vh; /* Memastikan body memenuhi tinggi viewport */
+            margin: 0;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Memusatkan konten secara vertikal */
-            align-items: center; /* Memusatkan konten secara horizontal */
+            justify-content: center;
+            align-items: center;
         }
 
         .container {
-            background-color: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+            background-color: rgba(0, 0, 0, 0.7);
             padding: 30px;
             border-radius: 10px;
-            width: 80%; /* Lebar container */
-            max-width: 600px; /* Lebar maksimum container */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+            width: 80%;
+            max-width: 800px; /* Lebar maksimum container diperbesar */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
             font-size: 32px;
             font-weight: bold;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Efek bayangan teks */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
-        p {
-            font-size: 18px;
-            line-height: 1.6;
+        .spec-item {
+            display: flex;
+            align-items: center;
             margin-bottom: 15px;
+            text-align: left; /* Mengatur teks ke kiri */
+        }
+
+        .spec-item img {
+            width: 100px; /* Lebar gambar */
+            height: 100px; /* Tinggi gambar */
+            margin-right: 20px; /* Jarak antara gambar dan teks */
+            border-radius: 5px; /* Membuat sudut gambar sedikit melengkung */
+            object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+        }
+
+        .spec-text {
+            flex-grow: 1; /* Membuat teks memenuhi ruang yang tersedia */
         }
 
         .highlight {
             font-weight: bold;
-            color: #FFFF00; /* Warna kuning untuk penekanan */
+            color: #FFFF00;
+        }
+
+        .description {
+            font-style: italic;
+            font-size: 14px;
         }
 
         /* Style untuk responsif */
@@ -58,8 +76,15 @@
                 font-size: 28px;
             }
 
-            p {
-                font-size: 16px;
+            .spec-item {
+                flex-direction: column; /* Mengubah tata letak menjadi vertikal pada layar kecil */
+                align-items: flex-start; /* Mengatur perataan elemen ke kiri */
+            }
+
+            .spec-item img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 10px;
             }
         }
     </style>
@@ -67,20 +92,41 @@
 <body>
     <div class="container">
         <h1>Spek PC Santiago</h1>
-        <p>Berikut adalah spesifikasi PC yang digunakan Santiago untuk streaming:</p>
-        <p><span class="highlight">Prosesor:</span> AMD Ryzen 9 5900X</p>
-        <p><span class="highlight">Motherboard:</span> ASUS ROG Crosshair VIII Hero</p>
-        <p><span class="highlight">RAM:</span> 32GB DDR4 3600MHz</p>
-        <p><span class="highlight">Kartu Grafis:</span> NVIDIA GeForce RTX 3080</p>
-        <p><span class="highlight">Penyimpanan:</span> 1TB NVMe SSD + 2TB HDD</p>
-        <p><span class="highlight">Casing:</span> NZXT H510i</p>
-        <p><span class="highlight">PSU:</span> Corsair RM850x</p>
-        <p><span class="highlight">Monitor:</span> ASUS ROG Swift PG279Q (1440p 165Hz)</p>
-        <p><span class="highlight">Keyboard:</span> Razer BlackWidow V3</p>
-        <p><span class="highlight">Mouse:</span> Logitech G Pro Wireless</p>
-        <p><span class="highlight">Headset:</span> HyperX Cloud Alpha</p>
-        <p><span class="highlight">Mikrofon:</span> Rode NT-USB+</p>
-        <p><span class="highlight">Webcam:</span> Logitech Brio</p>
+        <div class="spec-item">
+            <img src="https://i.imgur.com/I0wwVoD.jpeg" alt="RTX 3050">
+            <div class="spec-text">
+                <p><span class="highlight">Kartu Grafis:</span> NVIDIA GeForce RTX 3050</p>
+                <p class="description">Kartu grafis entry-level yang cukup mumpuni untuk bermain game modern pada resolusi 1080p.</p>
+            </div>
+        </div>
+        <div class="spec-item">
+            <img src="https://i.imgur.com/0M44T6V.png" alt="Ryzen 7 5800X3D"> <!-- Mengganti dengan gambar generik, GANTI DENGAN LINK YANG BENAR -->
+            <div class="spec-text">
+                <p><span class="highlight">Prosesor:</span> AMD Ryzen 7 5800X3D</p>
+                <p class="description">Prosesor gaming kelas atas dengan teknologi 3D V-Cache untuk performa yang sangat baik.</p>
+            </div>
+        </div>
+        <div class="spec-item">
+            <img src="https://i.imgur.com/rqHzLDf.jpeg" alt="WL Mouse Beast X Max">
+            <div class="spec-text">
+                <p><span class="highlight">Mouse:</span> WL Mouse Beast X Max</p>
+                <p class="description">Mouse gaming ringan dengan sensor presisi tinggi dan desain ergonomis.</p>
+            </div>
+        </div>
+        <div class="spec-item">
+            <img src="https://i.imgur.com/CNoGI3W.jpeg" alt="Lenovo 240Hz Monitor">
+            <div class="spec-text">
+                <p><span class="highlight">Monitor:</span> Lenovo 240Hz</p>
+                <p class="description">Monitor gaming dengan refresh rate tinggi untuk pengalaman bermain game yang lebih mulus.</p>
+            </div>
+        </div>
+        <div class="spec-item">
+            <img src="https://i.imgur.com/Ij1YXOe.jpeg" alt="HyperX Cloud II Headset">
+            <div class="spec-text">
+                <p><span class="highlight">Headset:</span> HyperX Cloud II</p>
+                <p class="description">Headset gaming yang nyaman dengan kualitas suara yang baik dan mikrofon yang jernih.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
