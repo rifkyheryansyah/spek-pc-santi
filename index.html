@@ -25,7 +25,7 @@
             padding: 30px;
             border-radius: 10px;
             width: 80%;
-            max-width: 800px; /* Lebar maksimum container diperbesar */
+            max-width: 800px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
@@ -40,19 +40,19 @@
             display: flex;
             align-items: center;
             margin-bottom: 15px;
-            text-align: left; /* Mengatur teks ke kiri */
+            text-align: left;
         }
 
         .spec-item img {
-            width: 100px; /* Lebar gambar */
-            height: 100px; /* Tinggi gambar */
-            margin-right: 20px; /* Jarak antara gambar dan teks */
-            border-radius: 5px; /* Membuat sudut gambar sedikit melengkung */
-            object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+            object-fit: cover;
         }
 
         .spec-text {
-            flex-grow: 1; /* Membuat teks memenuhi ruang yang tersedia */
+            flex-grow: 1;
         }
 
         .highlight {
@@ -65,7 +65,6 @@
             font-size: 14px;
         }
 
-        /* Style untuk responsif */
         @media (max-width: 600px) {
             .container {
                 width: 95%;
@@ -77,8 +76,8 @@
             }
 
             .spec-item {
-                flex-direction: column; /* Mengubah tata letak menjadi vertikal pada layar kecil */
-                align-items: flex-start; /* Mengatur perataan elemen ke kiri */
+                flex-direction: column;
+                align-items: flex-start;
             }
 
             .spec-item img {
@@ -95,12 +94,12 @@
         <div class="spec-item">
             <img src="https://i.imgur.com/I0wwVoD.jpeg" alt="RTX 3050">
             <div class="spec-text">
-                <p><span class="highlight">Kartu Grafis:</span> NVIDIA GeForce RTX 3050</p>
+                <p><span class="highlight">VGA:</span> NVIDIA GeForce RTX 3050</p>
                 <p class="description">Kartu grafis entry-level yang cukup mumpuni untuk bermain game modern pada resolusi 1080p.</p>
             </div>
         </div>
         <div class="spec-item">
-            <img src="https://i.imgur.com/0M44T6V.png" alt="Ryzen 7 5800X3D"> <!-- Mengganti dengan gambar generik, GANTI DENGAN LINK YANG BENAR -->
+            <img src="https://i.imgur.com/yQwALrj.png" alt="Ryzen 7 5800X3D">
             <div class="spec-text">
                 <p><span class="highlight">Prosesor:</span> AMD Ryzen 7 5800X3D</p>
                 <p class="description">Prosesor gaming kelas atas dengan teknologi 3D V-Cache untuk performa yang sangat baik.</p>
