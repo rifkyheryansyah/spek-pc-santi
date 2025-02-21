@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEK PC SANTIAGO + SENS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://i.imgur.com/pZLgYzw.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        input {
+            padding: 10px;
+            width: 50%;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function searchSpek() {
+            let input = document.getElementById('search').value.toLowerCase();
+            let items = document.querySelectorAll('li');
+
+            items.forEach(item => {
+                let text = item.textContent.toLowerCase();
+                item.style.display = text.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>SPEK PC SANTIAGO + SENS</h1>
+    <input type="text" id="search" onkeyup="searchSpek()" placeholder="Cari spek...">
+    <ul>
+        <li><strong>Sens:</strong> 0.408 dpi 2000</li>
+        <li><strong>VGA:</strong> RTX 3050</li>
+        <li><strong>CPU:</strong> Ryzen 7 5800x3D</li>
+        <li><strong>Mouse:</strong> Wl Mouse Beast X Max</li>
+        <li><strong>Monitor:</strong> Lenovo 240hz</li>
+        <li><strong>Headset:</strong> Hyperx Cloud2</li>
+        <li><strong>Mousepad:</strong> Fantech Agile</li>
+    </ul>
+</body>
+</html>
