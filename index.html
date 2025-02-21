@@ -27,24 +27,34 @@
             width: 80%;
             max-width: 800px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            display: flex; /* Menggunakan flexbox untuk membagi menjadi dua kolom */
-            flex-wrap: wrap; /* Memungkinkan item untuk pindah ke baris baru jika tidak cukup ruang */
-            justify-content: space-around; /* Mengatur jarak antar kolom */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 
         .section {
-            width: 45%; /* Lebar setiap kolom */
+            width: 45%;
             margin-bottom: 20px;
-            text-align: left; /* Mengatur teks ke kiri */
+            text-align: left;
         }
 
         h1 {
             font-size: 32px;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* Mengurangi margin bawah */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            text-align: center; /* Mengatur judul ke tengah */
-            width: 100%; /* Judul membentang selebar container */
+            text-align: center;
+            width: 100%;
+        }
+
+        .sens-dpi {
+            font-size: 20px; /* Ukuran font lebih besar */
+            font-weight: bold;
+            color: #FF4500; /* Warna oranye kemerahan */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px; /* Memberi jarak setelah bagian ini */
+            text-align: center;
+            width: 100%;
         }
 
         h2 {
@@ -84,11 +94,11 @@
 
         @media (max-width: 600px) {
             .container {
-                flex-direction: column; /* Mengubah tata letak menjadi vertikal pada layar kecil */
+                flex-direction: column;
             }
 
             .section {
-                width: 95%; /* Setiap bagian mengambil lebar penuh */
+                width: 95%;
             }
 
             .spec-item {
@@ -101,14 +111,19 @@
                 height: 80px;
                 margin-bottom: 10px;
             }
+
+            .sens-dpi {
+                font-size: 18px; /* Ukuran font lebih kecil pada layar kecil */
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Spek PC Santiago</h1>
+        <div class="sens-dpi">SENS: 0.408 DPI: 2000</div>
         <div class="section">
-            <h2>Part PC (Spek)</h2>
+            <h2>Part PC</h2>
             <div class="spec-item">
                 <img src="https://i.imgur.com/I0wwVoD.jpeg" alt="RTX 3050">
                 <div class="spec-text">
